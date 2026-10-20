@@ -16,6 +16,8 @@ public class Task {
             case MEDIUM -> name + " is 'medium' level";
             case HIGH -> name + " is 'high' level";
         };
+
+
     }
 
 }
