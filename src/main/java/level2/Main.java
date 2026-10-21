@@ -18,8 +18,8 @@ public class Main {
         Exercise2 plusMinus = new Exercise2();
 
         LocalDate start = LocalDate.of(2023, 1, 15);
-        LocalDate end   = LocalDate.of(2025, 6, 20);
-        Period period   = plusMinus.differentPeriods(start, end);
+        LocalDate end = LocalDate.of(2025, 6, 20);
+        Period period = plusMinus.differentPeriods(start, end);
 
         System.out.println("--- Exercise 2 ---");
         System.out.println("Period: " + plusMinus.formatedDayMonthOrYearPeriod(period));
@@ -40,6 +40,14 @@ public class Main {
         System.out.println("+5 hours:    " + addSubstrac.addHours(time, 5));
         System.out.println("-30 minutes: " + addSubstrac.substracMinutes(time, 30));
 
+        Exercise4 formated = new Exercise4();
+        LocalDateTime dt = LocalDateTime.of(2025, 3, 10, 1, 4, 35);
+
+        System.out.println("---Exercise 4 ---");
+        System.out.println("ISO: " + formated.formatIso(dt));
+        System.out.println("Classic date: " + formated.formatClassic(dt));
+        System.out.println("Time only: " + formated.formatTime(dt));
+        System.out.println("Long English: " + formated.formatLongEnglish(dt));
 
     }
 
