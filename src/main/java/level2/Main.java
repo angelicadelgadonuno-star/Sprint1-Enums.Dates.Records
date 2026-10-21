@@ -23,11 +23,26 @@ public class Main {
 
         System.out.println("--- Exercise 2 ---");
         System.out.println("Period: " + plusMinus.formatedDayMonthOrYearPeriod(period));
-
         LocalDateTime t1 = LocalDateTime.of(2025, 1, 1, 8, 0);
         LocalDateTime t2 = LocalDateTime.of(2025, 1, 1, 17, 45);
         Duration duration = plusMinus.differentDuration(t1, t2);
         System.out.println("Duration: " + plusMinus.formatedTimeDuration(duration));
+
+        Exercise3 addSubstrac = new Exercise3();
+        LocalDate one = LocalDate.of(2025, 3, 10);
+        LocalDateTime time = LocalDateTime.of(2025, 3, 10, 14, 0);
+
+        System.out.println("--- Exercise 3 ---");
+        System.out.println("Base:        " + one);
+        System.out.println("+10 days:    " + addSubstrac.addDays(one, 10));
+        System.out.println("-1 month:    " + addSubstrac.substracMonths(one, 1));
+        System.out.println("+2 years:    " + addSubstrac.addYears(one, 2));
+        System.out.println("+5 hours:    " + addSubstrac.addHours(time, 5));
+        System.out.println("-30 minutes: " + addSubstrac.substracMinutes(time, 30));
+
+
     }
+
+
 
 }

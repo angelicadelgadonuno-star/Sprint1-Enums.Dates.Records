@@ -25,5 +25,4 @@ public class Exercise3 {
         return minute.minusMinutes(minutes);
     }
 
-
 }
