@@ -49,6 +49,15 @@ public class Main {
         System.out.println("Time only: " + formated.formatTime(dt));
         System.out.println("Long English: " + formated.formatLongEnglish(dt));
 
-    }
+        Exercise5 beforeDt = new Exercise5();
 
+        System.out.println("--- Exercise 5 ---");
+        System.out.println("2020-01-01 before today? " + beforeDt.isTheDateBeforeToday(java.time.LocalDate.of(2020, 1, 1)));
+        System.out.println("Today before today?      " + beforeDt.isTheDateBeforeToday(java.time.LocalDate.now()));
+        System.out.println("2099-01-01 before today? " + beforeDt.isTheDateBeforeToday(java.time.LocalDate.of(2099, 1, 1)));
+
+
+    }
 }
+
+
