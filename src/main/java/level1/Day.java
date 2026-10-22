@@ -2,10 +2,10 @@ package level1;
 
 public enum Day {
 
-    Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday;
+    MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY;
 
     public boolean isAWorkingDay() {
-        return this != Saturday && this != Sunday;
+        return this != SATURDAY && this != SUNDAY;
     }
 
     public static void printDay(Day days) {

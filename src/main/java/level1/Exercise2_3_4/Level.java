@@ -18,10 +18,6 @@ public enum Level {
       return color;
    }
 
-   public int getPriority() {
-      return priority;
-   }
-
    public String showMessage() {
       return name() + "," + " color: " + color + ", " + "Intensity: " + priority;
    }

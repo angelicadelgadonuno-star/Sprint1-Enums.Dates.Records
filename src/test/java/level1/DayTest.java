@@ -11,11 +11,11 @@ class DayTest {
         assertTrue(Day.Monday.isAWorkingDay(), "Monday IS a working day");
         assertTrue(Day.Tuesday.isAWorkingDay(), "Tuesday IS a working day");
         assertTrue(Day.Wednesday.isAWorkingDay(), "Wednesday IS a working day");
-        assertTrue(Day.Thursday.isAWorkingDay(), "Thursday IS a working day");
-        assertTrue(Day.Friday.isAWorkingDay(), "Friday IS a working day");
+        assertTrue(Day.THURSDAY.isAWorkingDay(), "Thursday IS a working day");
+        assertTrue(Day.FRIDAY.isAWorkingDay(), "Friday IS a working day");
 
-        assertFalse(Day.Saturday.isAWorkingDay(), "Saturday is NOT a working day");
-        assertFalse(Day.Sunday.isAWorkingDay(), "Sunday is NOT a working day");
+        assertFalse(Day.SATURDAY.isAWorkingDay(), "Saturday is NOT a working day");
+        assertFalse(Day.SUNDAY.isAWorkingDay(), "Sunday is NOT a working day");
     }
 
     @Test
